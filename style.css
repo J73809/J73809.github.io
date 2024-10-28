@@ -81,3 +81,7 @@ section {
   display: none;
   color: var(--light-gray);
 }
+
+html {
+  scroll-behavior: smooth;
+}
