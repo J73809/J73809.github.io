@@ -157,3 +157,64 @@ footer {
   padding: 10px;
   background-color: #350035; /* Dark background for footer */
 }
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212; /* Dark background */
+    color: #e0e0e0; /* Light text */
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: #bb86fc; /* Bright purple */
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+nav a {
+    margin: 0 15px;
+    color: #bb86fc; /* Bright purple */
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.collapsible {
+    background-color: #6200ee; /* Darker purple */
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+}
+
+.content {
+    display: none;
+    padding: 0 18px;
+    overflow: hidden;
+    background-color: #3700b3; /* Darker purple */
+}
