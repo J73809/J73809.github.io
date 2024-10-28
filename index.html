@@ -3,207 +3,24 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Codify</title>
-  <style>
-    /* Basic Reset */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: Arial, sans-serif;
-    }
-
-    /* Root colors */
-    :root {
-      --almost-black: #0a0a0a;
-      --bright-purple: #d17bff;
-      --light-gray: #eaeaea;
-    }
-
-    /* General styles */
-    body {
-      background-color: var(--almost-black);
-      color: var(--light-gray);
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 30px;
-    }
-
-    h1, h2 {
-      color: var(--bright-purple);
-    }
-
-    .container {
-      max-width: 1200px;
-      width: 100%;
-    }
-
-    /* Navigation styles */
-    nav {
-      display: flex;
-      justify-content: space-around;
-      margin-bottom: 20px;
-      padding: 15px;
-      background: var(--bright-purple);
-      color: #fff;
-      flex-wrap: wrap;
-      border-radius: 8px;
-    }
-
-    nav a {
-      color: #fff;
-      text-decoration: none;
-      font-weight: bold;
-      font-size: 1.1em;
-      padding: 10px;
-    }
-
-    nav a:hover {
-      text-decoration: underline;
-    }
-
-    /* Section styles */
-    section {
-      margin-bottom: 40px;
-      padding: 20px;
-      background-color: #1c001f;
-      border-radius: 8px;
-      font-size: 1.1em;
-    }
-
-    /* Button style */
-    .toggle-btn {
-      background-color: var(--bright-purple);
-      color: #fff;
-      border: none;
-      padding: 12px 18px;
-      cursor: pointer;
-      font-size: 1em;
-      margin-top: 10px;
-      border-radius: 5px;
-      transition: background 0.3s ease;
-    }
-
-    .toggle-btn:hover {
-      background-color: #b55edb;
-    }
-
-    /* Interactive Facts */
-    .fact {
-      margin: 12px 0;
-      padding: 12px;
-      background-color: #290033;
-      border-radius: 8px;
-      color: var(--bright-purple);
-      display: none;
-    }
-
-    /* Responsive styling */
-    @media (max-width: 768px) {
-      nav {
-        flex-direction: column;
-      }
-
-      nav a {
-        margin: 8px 0;
-        text-align: center;
-      }
-
-      h1 {
-        font-size: 2em;
-        text-align: center;
-      }
-
-      h2 {
-        font-size: 1.6em;
-        text-align: center;
-      }
-    }
-
-    @media (max-width: 480px) {
-      .container {
-        padding: 10px;
-      }
-
-      .toggle-btn {
-        font-size: 0.9em;
-      }
-    }
-  </style>
+  <title>Codify - Home</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="container">
     <h1>Welcome to Codify</h1>
     <nav>
-      <a href="#home">Home</a>
-      <a href="#languages">Languages</a>
-      <a href="#fun-facts">Fun Facts</a>
-      <a href="#ides">IDEs</a>
-      <a href="#tips">Tips</a>
+      <a href="index.html">Home</a>
+      <a href="languages.html">Languages</a>
+      <a href="fun-facts.html">Fun Facts</a>
+      <a href="ides.html">IDEs</a>
+      <a href="tips.html">Tips</a>
+      <a href="getting-started.html">Getting Started</a>
     </nav>
-
-    <!-- Home Section -->
     <section id="home">
-      <h2>Home</h2>
-      <p>Welcome to Codify, a place where programming knowledge meets fun! Here you'll find information about popular programming languages, interesting facts, recommended IDEs, and useful tips to improve your coding skills.</p>
-    </section>
-
-    <!-- Programming Languages Section -->
-    <section id="languages">
-      <h2>Programming Languages</h2>
-      <ul>
-        <li><strong>Python</strong> - Great for beginners, data science, and AI.</li>
-        <li><strong>JavaScript</strong> - Essential for web development.</li>
-        <li><strong>C#</strong> - A powerful language often used for game development.</li>
-        <li><strong>Java</strong> - Popular for cross-platform applications.</li>
-        <li><strong>HTML & CSS</strong> - The backbone of the web, used for structuring and styling websites.</li>
-      </ul>
-    </section>
-
-    <!-- Fun Facts Section -->
-    <section id="fun-facts">
-      <h2>Fun Facts</h2>
-      <button class="toggle-btn" onclick="showFacts()">Click to reveal some fun facts about programming!</button>
-      <div class="fact">The first computer programmer was Ada Lovelace in the 1840s.</div>
-      <div class="fact">The first computer virus was created in 1983.</div>
-      <div class="fact">The original version of Microsoft Windows was released in 1985.</div>
-    </section>
-
-    <!-- IDEs Section -->
-    <section id="ides">
-      <h2>Popular IDEs</h2>
-      <ul>
-        <li><strong>VS Code</strong> - Highly customizable and supports a range of languages.</li>
-        <li><strong>PyCharm</strong> - Excellent for Python development.</li>
-        <li><strong>Visual Studio</strong> - Full-featured IDE often used for C# and .NET development.</li>
-        <li><strong>Atom</strong> - Lightweight and open-source.</li>
-        <li><strong>IntelliJ IDEA</strong> - Great for Java development.</li>
-      </ul>
-    </section>
-
-    <!-- Tips Section -->
-    <section id="tips">
-      <h2>Programming Tips</h2>
-      <ul>
-        <li><strong>Practice regularly</strong> - Coding is a skill that improves with practice.</li>
-        <li><strong>Learn to debug</strong> - Finding and fixing bugs is a crucial skill.</li>
-        <li><strong>Write readable code</strong> - Clean code is easier to maintain and share.</li>
-        <li><strong>Use version control</strong> - Tools like Git help track changes and collaborate.</li>
-        <li><strong>Keep learning</strong> - The tech world evolves rapidly, so stay updated.</li>
-      </ul>
+      <h2>About Codify</h2>
+      <p>Codify is your go-to website for programming resources, fun facts, IDE recommendations, and tips to help you get started in the coding world. Explore the sections to learn more about each topic.</p>
     </section>
   </div>
-
-  <script>
-    function showFacts() {
-      const facts = document.querySelectorAll('.fact');
-      facts.forEach((fact, index) => {
-        setTimeout(() => {
-          fact.style.display = 'block';
-        }, index * 500); // show each fact one by one
-      });
-    }
-  </script>
 </body>
 </html>
