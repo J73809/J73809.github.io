@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Codify - Fun Facts</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Fun Facts</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="languages.html">Languages</a>
+      <a href="fun-facts.html">Fun Facts</a>
+      <a href="ides.html">IDEs</a>
+      <a href="tips.html">Tips</a>
+      <a href="getting-started.html">Getting Started</a>
+    </nav>
+    <section>
+      <h2>Did You Know?</h2>
+      <button class="toggle-btn" onclick="showNextFact()">Next Fun Fact</button>
+      <div class="fact" id="fact1">Ada Lovelace was the first computer programmer in the 1840s.</div>
+      <div class="fact" id="fact2">The first computer virus was created in 1983.</div>
+      <div class="fact" id="fact3">Python was named after Monty Python, not the snake.</div>
+    </section>
+  </div>
+  <script>
+    let currentFact = 0;
+    const facts = document.querySelectorAll('.fact');
+    function showNextFact() {
+      facts[currentFact].style.display = 'none';
+      currentFact = (currentFact + 1) % facts.length;
+      facts[currentFact].style.display = 'block';
+    }
+    showNextFact(); // Show the first fact on page load
+  </script>
+</body>
+</html>
