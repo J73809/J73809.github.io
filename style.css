@@ -254,3 +254,85 @@ nav a:hover {
         text-align: center; /* Center text in links */
     }
 }
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212; /* Dark background */
+    color: #e0e0e0; /* Light text */
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: #bb86fc; /* Bright purple */
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap to the next line */
+    justify-content: center; /* Center the items */
+    margin-bottom: 20px;
+    padding: 10px; /* Add some padding */
+    background-color: #121212; /* Dark background for nav */
+    border-radius: 5px; /* Optional: rounded corners */
+}
+
+nav a {
+    margin: 5px; /* Space between links */
+    padding: 10px 15px; /* Padding for better touch targets */
+    color: #bb86fc; /* Bright purple */
+    text-decoration: none;
+    border-radius: 5px; /* Optional: rounded corners */
+    transition: background-color 0.3s; /* Smooth transition for hover */
+}
+
+nav a:hover {
+    background-color: #3700b3; /* Darker purple on hover */
+}
+
+/* Media Query for Smaller Screens */
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column; /* Stack items vertically on small screens */
+        align-items: center; /* Center align items */
+    }
+
+    nav a {
+        width: 100%; /* Full width for each link */
+        text-align: center; /* Center text in links */
+    }
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.collapsible {
+    background-color: #6200ee; /* Darker purple */
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+}
+
+.content {
+    display: none;
+    padding: 0 18px;
+    overflow: hidden;
+    background-color: #3700b3; /* Darker purple */
+}
