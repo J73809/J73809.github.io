@@ -85,3 +85,22 @@ section {
 html {
   scroll-behavior: smooth;
 }
+.collapsible {
+  background-color: #350035;
+  color: #c653c6;
+  cursor: pointer;
+  padding: 10px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+}
+
+.content {
+  display: none;
+  padding: 10px;
+  color: #c653c6;
+}
+button:hover, .collapsible:hover {
+  background-color: #4a004a;
+}
