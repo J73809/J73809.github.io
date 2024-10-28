@@ -104,3 +104,56 @@ html {
 button:hover, .collapsible:hover {
   background-color: #4a004a;
 }
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #c653c6; /* Primary text color */
+}
+
+h1, h2, h3 {
+  color: #f1f1f1; /* Bright text for headers */
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+  background-color: #350035; /* Dark background for header */
+}
+
+nav {
+  text-align: center;
+  margin: 10px 0;
+}
+
+nav a {
+  margin: 0 15px;
+  color: #c653c6;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  padding: 20px;
+}
+
+#intro, #featured {
+  margin-bottom: 20px;
+}
+
+.feature {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #c653c6; /* Border around each feature */
+  border-radius: 5px;
+  background-color: rgba(55, 0, 55, 0.8); /* Semi-transparent background */
+}
+
+footer {
+  text-align: center;
+  margin-top: 30px;
+  padding: 10px;
+  background-color: #350035; /* Dark background for footer */
+}
