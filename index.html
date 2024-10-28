@@ -1,11 +1,201 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Codify</title>
   <style>
+    /* Basic Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Root colors */
+    :root {
+      --dark-purple: #1a0033;
+      --bright-purple: #b366ff;
+      --light-gray: #ddd;
+    }
+
+    /* General styles */
     body {
-      color: "black";
+      background-color: var(--dark-purple);
+      color: var(--light-gray);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+    }
+
+    h1, h2 {
+      color: var(--bright-purple);
+    }
+
+    .container {
+      max-width: 1000px;
+      width: 100%;
+    }
+
+    /* Navigation styles */
+    nav {
+      display: flex;
+      justify-content: space-around;
+      margin-bottom: 20px;
+      padding: 10px;
+      background: var(--bright-purple);
+      color: #fff;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 5px;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* Section styles */
+    section {
+      margin-bottom: 30px;
+      padding: 15px;
+      background-color: #320066;
+      border-radius: 8px;
+    }
+
+    /* Button style */
+    .toggle-btn {
+      background-color: var(--bright-purple);
+      color: #fff;
+      border: none;
+      padding: 10px 15px;
+      cursor: pointer;
+      font-size: 1em;
+      margin-top: 10px;
+      border-radius: 5px;
+    }
+
+    /* Interactive Facts */
+    .fact {
+      margin: 10px 0;
+      padding: 10px;
+      background-color: #280055;
+      border-radius: 8px;
+      color: var(--bright-purple);
+      display: none;
+    }
+
+    /* Responsive styling */
+    @media (max-width: 768px) {
+      nav {
+        flex-direction: column;
+      }
+      
+      nav a {
+        margin: 5px 0;
+        text-align: center;
+      }
+
+      h1 {
+        font-size: 1.8em;
+        text-align: center;
+      }
+
+      h2 {
+        font-size: 1.4em;
+        text-align: center;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .container {
+        padding: 10px;
+      }
+
+      .toggle-btn {
+        font-size: 0.9em;
+      }
     }
   </style>
-  <body>
-    Text
-  </body>
+</head>
+<body>
+  <div class="container">
+    <h1>Welcome to Codify</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#languages">Languages</a>
+      <a href="#fun-facts">Fun Facts</a>
+      <a href="#ides">IDEs</a>
+      <a href="#tips">Tips</a>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home">
+      <h2>Home</h2>
+      <p>Welcome to Codify, a place where programming knowledge meets fun! Here you'll find information about popular programming languages, interesting facts, recommended IDEs, and useful tips to improve your coding skills.</p>
+    </section>
+
+    <!-- Programming Languages Section -->
+    <section id="languages">
+      <h2>Programming Languages</h2>
+      <ul>
+        <li><strong>Python</strong> - Great for beginners, data science, and AI.</li>
+        <li><strong>JavaScript</strong> - Essential for web development.</li>
+        <li><strong>C#</strong> - A powerful language often used for game development.</li>
+        <li><strong>Java</strong> - Popular for cross-platform applications.</li>
+        <li><strong>HTML & CSS</strong> - The backbone of the web, used for structuring and styling websites.</li>
+      </ul>
+    </section>
+
+    <!-- Fun Facts Section -->
+    <section id="fun-facts">
+      <h2>Fun Facts</h2>
+      <button class="toggle-btn" onclick="showFacts()">Click to reveal some fun facts about programming!</button>
+      <div class="fact">The first computer programmer was Ada Lovelace in the 1840s.</div>
+      <div class="fact">The first computer virus was created in 1983.</div>
+      <div class="fact">The original version of Microsoft Windows was released in 1985.</div>
+    </section>
+
+    <!-- IDEs Section -->
+    <section id="ides">
+      <h2>Popular IDEs</h2>
+      <ul>
+        <li><strong>VS Code</strong> - Highly customizable and supports a range of languages.</li>
+        <li><strong>PyCharm</strong> - Excellent for Python development.</li>
+        <li><strong>Visual Studio</strong> - Full-featured IDE often used for C# and .NET development.</li>
+        <li><strong>Atom</strong> - Lightweight and open-source.</li>
+        <li><strong>IntelliJ IDEA</strong> - Great for Java development.</li>
+      </ul>
+    </section>
+
+    <!-- Tips Section -->
+    <section id="tips">
+      <h2>Programming Tips</h2>
+      <ul>
+        <li><strong>Practice regularly</strong> - Coding is a skill that improves with practice.</li>
+        <li><strong>Learn to debug</strong> - Finding and fixing bugs is a crucial skill.</li>
+        <li><strong>Write readable code</strong> - Clean code is easier to maintain and share.</li>
+        <li><strong>Use version control</strong> - Tools like Git help track changes and collaborate.</li>
+        <li><strong>Keep learning</strong> - The tech world evolves rapidly, so stay updated.</li>
+      </ul>
+    </section>
+  </div>
+
+  <script>
+    function showFacts() {
+      const facts = document.querySelectorAll('.fact');
+      facts.forEach((fact, index) => {
+        setTimeout(() => {
+          fact.style.display = 'block';
+        }, index * 500); // show each fact one by one
+      });
+    }
+  </script>
+</body>
 </html>
