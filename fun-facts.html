@@ -5,10 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Codify - Fun Facts</title>
   <link rel="stylesheet" href="style.css">
+  <script defer src="scripts.js"></script>
 </head>
 <body>
   <div class="container">
-    <h1>Fun Facts</h1>
+    <h1>Fun Facts About Programming</h1>
     <nav>
       <a href="index.html">Home</a>
       <a href="languages.html">Languages</a>
@@ -16,24 +17,14 @@
       <a href="ides.html">IDEs</a>
       <a href="tips.html">Tips</a>
       <a href="getting-started.html">Getting Started</a>
+      <a href="youtube.html">YouTube Channels</a>
+      <a href="links.html">Useful Links</a>
+      <a href="tools.html">Tools</a>
     </nav>
-    <section>
-      <h2>Did You Know?</h2>
-      <button class="toggle-btn" onclick="showNextFact()">Next Fun Fact</button>
-      <div class="fact" id="fact1">Ada Lovelace was the first computer programmer in the 1840s.</div>
-      <div class="fact" id="fact2">The first computer virus was created in 1983.</div>
-      <div class="fact" id="fact3">Python was named after Monty Python, not the snake.</div>
+    <section id="fun-fact-section">
+      <p id="fun-fact">Did you know? The first computer programmer was Ada Lovelace.</p>
+      <button onclick="newFunFact()">Show Another Fun Fact</button>
     </section>
   </div>
-  <script>
-    let currentFact = 0;
-    const facts = document.querySelectorAll('.fact');
-    function showNextFact() {
-      facts[currentFact].style.display = 'none';
-      currentFact = (currentFact + 1) % facts.length;
-      facts[currentFact].style.display = 'block';
-    }
-    showNextFact(); // Show the first fact on page load
-  </script>
 </body>
 </html>
